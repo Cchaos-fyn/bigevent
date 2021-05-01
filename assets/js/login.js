@@ -34,7 +34,7 @@ $(function () {
 
   //监听注册表单的提交事件
   $("#form_reg").on("submit", function (e) {
-    //1.阻止默认的提交行为
+    //1.阻止默认的提交行为 
     e.preventDefault();
     // 2.发起Ajax的POST请求
     // (原接口访问有问题这里用的是后台管理系统的备用接口)
