@@ -27,7 +27,7 @@ function getUserInfo() {
                 return layui.layer.msg('获取用户信息失败')
             }
             //调用renderAvatar 渲染用户的头像
-            console.log(res);
+            // console.log(res);
             renderAvatar(res.data)
         }
         //挪到了全局变量的baseAPI中
@@ -53,7 +53,7 @@ function renderAvatar(user) {
     //渲染用户的头像
     if(user.user_pic !== null) {
         //渲染图片头像
-        $('.layui-nav-img').attr('src',user_pic).show()
+        $('.layui-nav-img').attr('src',user.user_pic).show()
         $('.text-avatar').hide()
     }else {
         // 渲染文本头像
